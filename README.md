@@ -18,27 +18,37 @@
 # Funcionamiento del código
 
 ## main
+#### Códificación:
 #### Descripción detallada:
 
 ## delay
+#### Códificación:
 #### Descripción detallada:
 
 ## Default_Handler
+#### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/d3ad1323-ac63-4326-baf4-58de240718d6)
 #### Descripción detallada:
+Es una subrutina no implementada en ISR, es decir, será ejecutada cada vez que la interrupción apropiada no sea definida.
 
 ## SysTick_Handler
+#### Códificación:
 #### Descripción detallada:
 
 ## Reset_Handler
+#### Códificación:
 #### Descripción detallada:
 
 ## EXTI0_Handler
+#### Códificación:
 #### Descripción detallada:
 
 ## EXTI1_Handler
+#### Códificación:
 #### Descripción detallada:
 
-## main
+## output
+#### Códificación:
 #### Descripción detallada:
 
 
