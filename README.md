@@ -57,15 +57,16 @@ Al final de la misma se hace un llamado a la función main
 
 ## output
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/0c897266-fbbf-44b7-bdb6-58dd0975cf83)
 #### Descripción detallada:
 
 
 ## Diagrama del circuito:
-![ADD_page-0001](https://github.com/DamianRPG/Lab5/assets/126529855/9685ae01-5383-47ab-bb22-805555e3bf0d)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/43475c5b-b9c1-42e5-bae7-dca48eeb227a)
 
-# Descricpión de circuito:
-- Puertos de entrada: PA10 y PA11.
-- Puertos de salida: PA0 - PA9.
-- Una vez definidos los puertos de salida, estos harán conexión con la parte positiva de los leds (el ánodo); por otra parte, cada una de sus partes negativas (el cátodo), tendrán una conexión a una resistencia de 220OMS, esto con el fin de evitar que el sistema sufra sobrecargas. El pin G (tierra) alimentará a estos resistores.
-Mientras tanto los buttons, que constan de dos pines, tendrán una conexión al pin de entrada correspondiente al STM32f103c8t6; mientras que el restante estará conectado al pin 3.3 (voltaje emitido por el microcontrolador).
+# Descricpión de su funcionamiento:
+El microcontrolador en su estado inicial, mantiene una cuenta ascendente en numeración binaria, la cual es representada de forma visual con ayuda de 10 leds.
+Además consta de dos botones, cuyo funcionamiento es el siguiente.
+Botón 1: Al ser presionado, la cuenta cambia de ascendente a descendente.
+Botón 2: Al ser presionado, la velocidad con la que fluye la cuenta se modifica a x2, x4, x8 y volviendo a x1 según el número de veces que sea ejecutada la interrupción.
 
