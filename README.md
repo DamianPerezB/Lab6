@@ -33,7 +33,9 @@ Es una subrutina no implementada en ISR, es decir, será ejecutada cada vez que 
 
 ## SysTick_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/2c369df5-03eb-4481-9e4f-4b059a5e4532)
 #### Descripción detallada:
+Es una excepción que se dispara cada vez que el reloj llega a 0. Se invoca de forma automática por el hardware del procesador cuando ocurre una interrupción del temporizador
 
 ## Reset_Handler
 #### Códificación:
