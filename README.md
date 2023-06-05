@@ -66,7 +66,7 @@ Al final de la misma se hace un llamado a la función main
 
 # Descricpión de su funcionamiento:
 El microcontrolador en su estado inicial, mantiene una cuenta ascendente en numeración binaria, la cual es representada de forma visual con ayuda de 10 leds.
-Además consta de dos botones, cuyo funcionamiento es el siguiente.
-Botón 1: Al ser presionado, la cuenta cambia de ascendente a descendente.
+Además consta de dos botones, cuyo funcionamiento es el siguiente.  
+Botón 1: Al ser presionado, la cuenta cambia de ascendente a descendente.  
 Botón 2: Al ser presionado, la velocidad con la que fluye la cuenta se modifica a x2, x4, x8 y volviendo a x1 según el número de veces que sea ejecutada la interrupción.
 
