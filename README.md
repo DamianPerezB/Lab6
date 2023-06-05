@@ -39,7 +39,13 @@ Es una excepción que se dispara cada vez que el reloj llega a 0. Se invoca de f
 
 ## Reset_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/e6f3e1f2-ea93-406a-89f9-0b3286a50aa9)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/1d19ea9e-18b5-4776-b2df-bd0193522b3d)
+
 #### Descripción detallada:
+Se encarga de la inicialización y configuración del sistema cuando ocurre la interrupción de reinicio (RESET). Es el punto de partida del programa y se ejecuta antes de cualquier otra rutina o función en el sistema.
+En este caso se utilizan a los registros r8, r9 y r10 como variables locales, donde cada uno representa la velocidad, dirección y contador de leds respectivamente.
+Al final de la misma se hace un llamado a la función main
 
 ## EXTI0_Handler
 #### Códificación:
