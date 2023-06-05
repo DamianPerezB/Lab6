@@ -23,6 +23,7 @@
 
 ## delay
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/e79052b7-01d0-44da-8787-f70f650a599c)
 #### Descripción detallada:
 
 ## Default_Handler
@@ -49,10 +50,12 @@ Al final de la misma se hace un llamado a la función main
 
 ## EXTI0_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/121059f0-27ff-4314-a2e4-489f37c1191d)
 #### Descripción detallada:
 
 ## EXTI1_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/422a3af0-e452-479d-9816-6620486ae028)
 #### Descripción detallada:
 
 ## output
