@@ -6,13 +6,14 @@
 
 ## El código utilizado consta de las siguientes funciones:
 1) main
-2) delay
+2) Delay
 3) Default_Handler
-4) EXTI0_Handler
-5) EXIT1_Handler
-6) output.s
-7) SysTick_Handler
+4) EXIT15_11_Handler
+5) Output.s
+6) SysTick_Handler
+7) Config_Reset_Handler
 8) Reset_Handler
+9) Speed
 
 
 # Funcionamiento del código
@@ -21,46 +22,52 @@
 #### Códificación:
 #### Descripción detallada:
 
-## delay
+## Delay
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/e79052b7-01d0-44da-8787-f70f650a599c)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/87c97e74-371c-4038-932b-f7f6ade1975a)
 #### Descripción detallada:
+Función encargada de generar un retraso. Cargará el valor de la velocidad en un registro temporal para compararlo con 0. En caso de que este no sea el mismo, Systick_Handler generará un retraso al decrementar 1 al registro global y volver a hacer la comparación hasta que el mismo sea igual a 0.
 
 ## Default_Handler
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/d3ad1323-ac63-4326-baf4-58de240718d6)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/f6ac55a6-0ae9-45d5-a809-941aefbd8709)
 #### Descripción detallada:
 Es una subrutina no implementada en ISR, es decir, será ejecutada cada vez que la interrupción apropiada no sea definida.
 
+## EXIT15_11_Handler
+#### Códificación:
+#### Descripción detallada:
+
+## Output
+#### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/1ea02dfc-2277-41f6-9467-6514f6db0a9c)
+#### Descripción detallada:
+Encargado de mostrar el valor en el puerto digital, incialmente carga 1023 (que en bits nos retorna 10 veces uno) y compara con la cuenta actual del registro global r11. Esto nos permite mostrarlo como salida al cargar el valor en la base GPIOA
+
 ## SysTick_Handler
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/2c369df5-03eb-4481-9e4f-4b059a5e4532)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/ebf03a20-24ca-42d2-94fc-60a09b8ddaa4)
 #### Descripción detallada:
 Es una excepción que se dispara cada vez que el reloj llega a 0. Se invoca de forma automática por el hardware del procesador cuando ocurre una interrupción del temporizador
 
+## Config_Reset_Handler
+#### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/b2115312-af44-4624-a3b7-6972703aa176)
+#### Descripción detallada:
+Simula reservar 4 registros para hacerlos "globales"  
+r8: velocidad inicial  
+r9: modificador de velocidad  
+r10: dirección de la cuenta  
+r11: cuenta o contador  
 ## Reset_Handler
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/e6f3e1f2-ea93-406a-89f9-0b3286a50aa9)
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/1d19ea9e-18b5-4776-b2df-bd0193522b3d)
-
 #### Descripción detallada:
 Se encarga de la inicialización y configuración del sistema cuando ocurre la interrupción de reinicio (RESET). Es el punto de partida del programa y se ejecuta antes de cualquier otra rutina o función en el sistema.
 En este caso se utilizan a los registros r8, r9 y r10 como variables locales, donde cada uno representa la velocidad, dirección y contador de leds respectivamente.
 Al final de la misma se hace un llamado a la función main
 
-## EXTI0_Handler
+## Speed
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/121059f0-27ff-4314-a2e4-489f37c1191d)
-#### Descripción detallada:
-
-## EXTI1_Handler
-#### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/422a3af0-e452-479d-9816-6620486ae028)
-#### Descripción detallada:
-
-## output
-#### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/0c897266-fbbf-44b7-bdb6-58dd0975cf83)
 #### Descripción detallada:
 
 
