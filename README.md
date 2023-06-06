@@ -40,7 +40,7 @@ Es una subrutina no implementada en ISR, es decir, será ejecutada cada vez que 
 
 ## Output
 #### Códificación:
-![image](https://github.com/DamianPerezB/Lab6/assets/89427173/1ea02dfc-2277-41f6-9467-6514f6db0a9c)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/d364ba08-b2fb-4e92-89ad-e61f4d9c733b)
 #### Descripción detallada:
 Encargado de mostrar el valor en el puerto digital, incialmente carga 1023 (que en bits nos retorna 10 veces uno) y compara con la cuenta actual del registro global r11. Esto nos permite mostrarlo como salida al cargar el valor en la base GPIOA
 
