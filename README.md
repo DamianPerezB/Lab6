@@ -69,7 +69,10 @@ Inicia haciendo un llamado a la función main y a esta le suma 1 para indicar qu
 
 ## Speed
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/f0150115-accc-485b-bd4d-b61381e189bf)
 #### Descripción detallada:
+Es un conjunto de if´s en los cuales se busca ver el número de pulsaciones en el botón para identificar a que velocidad irá aumentando o disminuyendo la cuenta.  
+La velocidad inicial es de 1000 ms, pero esta irá disminuyendo por la mitad hasta llegar a 125 (velocidad x8) donde, en caso de verse oprimido nuevamente el botón, la misma pasará de nuevo a su estado inicial (1000 ms).
 
 
 ## Diagrama del circuito:
