@@ -20,7 +20,16 @@
 
 ## main
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/68678753-d5c8-4664-8da1-cc6d539840ed)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/4e448a7d-a26e-47e4-8c3b-15e272b79804)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/ee76a7f6-6919-4ec4-8004-059ccf094bf7)
+
 #### Descripción detallada:
+Habilita el reloj del puerto A, define los pines PA0 a PA9 como salidas y PA10 junto con PA11 como entradas.  
+Además configura a PA10 y PA11 como entradas para generar las interrupciones EXTI10 y EXTI11 y llama a la función config para inicializar los registros globales.  
+A continuación se realiza la configuración para que NVIC sea el encargado de atender las interrupciones de la función EXTI, esto se consigue cargando el bit definido para la interrupción y enmascarandolo con NVIC_ISER1_OFFSET.  
+Seguido de esto, deshabilitamos Systick IRQ y Systick timer, para así establecer a SysTick_CRL. Por consiguiente se limpia el valor de SysTick y se establece la prioridad en la que se atenderán las interrupciones, para así configurar a SysTick CRL para habulitar el temporizador de las interrupciones.
+Finalmente se verifica la dirección en que debe avanzar la cuenta con el registro global r10, donde aumentará o disminuirá dependiendo su valor almacenado, se mostrará el retraso y terminará verificando la velocidad en la que se encuentra la cuenta y generando un pequeño retraso.
 
 ## Delay
 #### Códificación:
