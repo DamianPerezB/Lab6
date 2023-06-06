@@ -36,7 +36,12 @@ Es una subrutina no implementada en ISR, es decir, será ejecutada cada vez que 
 
 ## EXIT15_11_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/85747e0f-0839-43bb-a50d-b75146de189d)
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/fd93f58a-c647-4f5c-82e5-4ca2ec9e134a)
 #### Descripción detallada:
+En la primer parte (EXTI15_10) Se define que interrupción se va a ejecutar. Para este caso se seleccionó 10 y 11. La comparación se utiliza para ver el número (x400 para la posición 10 y x800 para la posición 11). Dependiendo de que botón esté presionado, saltará a EXTI10 o EXTI11.  
+EXTI10: Encargada de cambiar la direeción de la cuenta con el registro global r8, aumenta de uno en uno y limpia el PR para que se encuentre listo en la siguiente interrupción.
+EXTI11: Encargada de aumentar la velocidad con el registro global r10, aumenta de uno en uno y limpia el PR para que se encuentre listo en la siguiente interrupción.
 
 ## Output
 #### Códificación:
