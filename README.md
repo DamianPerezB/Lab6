@@ -59,12 +59,13 @@ r8: velocidad inicial
 r9: modificador de velocidad  
 r10: dirección de la cuenta  
 r11: cuenta o contador  
+
 ## Reset_Handler
 #### Códificación:
+![image](https://github.com/DamianPerezB/Lab6/assets/89427173/cd80151c-074b-48dd-b538-b42778aa8739)
 #### Descripción detallada:
-Se encarga de la inicialización y configuración del sistema cuando ocurre la interrupción de reinicio (RESET). Es el punto de partida del programa y se ejecuta antes de cualquier otra rutina o función en el sistema.
-En este caso se utilizan a los registros r8, r9 y r10 como variables locales, donde cada uno representa la velocidad, dirección y contador de leds respectivamente.
-Al final de la misma se hace un llamado a la función main
+Es el punto de partida del programa y se ejecuta antes de cualquier otra rutina o función en el sistema.  
+Inicia haciendo un llamado a la función main y a esta le suma 1 para indicar que es una función thumb; en caso de que retorne a la misma, hará un loop infinito
 
 ## Speed
 #### Códificación:
